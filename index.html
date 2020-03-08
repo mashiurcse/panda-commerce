@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
+
     <title>Panda-Commerce</title>
   </head>
   <body>
@@ -37,13 +38,13 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Shoes</a>
+              <a class="nav-link" href="#shoes">Shoes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Backpack</a>
+              <a class="nav-link" href="#backpack">Backpack</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="#contactus">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -57,11 +58,11 @@
       >
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <div class="row">
+            <div class="row align-items-center">
               <div class="col-md-7">
                 <h1>Headphone for Sale</h1>
                 <p>This the greatest headphone in the world!</p>
-                <h1>$400</h1>
+                <h1 class="price">$400</h1>
                 <button class="by-now-button">Buy Now</button>
               </div>
               <div class="col-md-5">
@@ -73,12 +74,12 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="row">
+          <div class="carousel-item ">
+            <div class="row align-items-center">
               <div class="col-md-7">
                 <h1>Samsung Mega LED TV</h1>
                 <p>This the greatest TV in the world!</p>
-                <h1>$1200</h1>
+                <h1 class="price">$1200</h1>
                 <button class="by-now-button">Buy Now</button>
               </div>
               <div class="col-md-5">
@@ -91,11 +92,11 @@
             </div>
           </div>
           <div class="carousel-item">
-            <div class="row">
+            <div class="row align-items-center">
               <div class="col-md-7">
                 <h1>Samsung Xbox</h1>
                 <p>This the greatest xbox in the world!</p>
-                <h1>$800</h1>
+                <h1 class="price">$800</h1>
                 <button class="by-now-button">Buy Now</button>
               </div>
               <div class="col-md-5">
@@ -127,6 +128,160 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
+    </div>
+
+    <div class="container categories">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="cat1 d-flex justify-content-between align-items-center">
+            <h1>Watch</h1>
+            <img src="images/categories/watch.png" alt="" />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="cat2 d-flex justify-content-between align-items-center">
+            <h1>Bag</h1>
+            <img src="images/categories/bag.png" alt="" />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="cat3 d-flex justify-content-between align-items-center">
+            <h1>Shoes</h1>
+            <img src="images/categories/shoes.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container shoes" id="shoes">
+      <h3>Shoes</h3>
+      <div class="card-deck">
+        <div class="card">
+          <img src="images/shoes/shoe-1.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Supply 350</h5>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+            <h5 class="price">
+              $170
+            </h5>
+          </div>
+          <div class="card-footer">
+            <button class="by-now-button">Buy Now >></button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/shoes/shoe-2.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Nike 320</h5>
+            <p class="card-text">
+              This card has supporting text below as a natural lead-in to
+              additional content.
+            </p>
+            <h5 class="price">
+              $320
+            </h5>
+          </div>
+          <div class="card-footer">
+            <button class="by-now-button">Buy Now >></button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/shoes/shoe-3.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Red Max</h5>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This card has even longer content
+              than the first to show that equal height action.
+            </p>
+            <h5 class="price">
+              $370
+            </h5>
+          </div>
+          <div class="card-footer">
+            <button class="by-now-button">Buy Now >></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="backpack">
+      <h3>Backpack</h3>
+      <div class="card-deck">
+        <div class="card">
+          <img src="images/bags/bag-1.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Red Bag</h5>
+            <h5 class="price">
+              $320
+            </h5>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+          </div>
+          <div class="card-footer">
+            <button class="by-now-button">Buy Now >></button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/bags/bag-2.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Blue Bag</h5>
+            <h5 class="price">
+              $320
+            </h5>
+            <p class="card-text">
+              This card has supporting text below as a natural lead-in to
+              additional content.
+            </p>
+          </div>
+          <div class="card-footer">
+            <button class="by-now-button">Buy Now >></button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/bags/bag-3.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Black Bag</h5>
+            <h5 class="price">
+              $320
+            </h5>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This card has even longer content
+              than the first to show that equal height action.
+            </p>
+          </div>
+          <div class="card-footer">
+            <button class="by-now-button">Buy Now >></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="container orange-bg d-flex align-items-center justify-content-center"
+      id="contactus"
+    >
+      <div>
+        <h3>LET'S STAY IN TOUCH</h3>
+        <h6>Get updates on sales, specials and more</h6>
+        <input class="form-control" type="text" />
+        <button class="by-now-button">SUBMIT</button>
+      </div>
+    </div>
+    <div class="container">
+      <footer>
+        <small
+          >©2020. Panda Commerce. All rights reserved. Mashiur, Sweden.</small
+        >
+      </footer>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
